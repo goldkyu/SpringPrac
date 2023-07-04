@@ -1,0 +1,348 @@
+text, p, a, li, h, b, input, input::placeholder, .infos, th {
+	font-family: 'Poppins', sans-serif;
+}
+
+article {
+	background-color: white;
+	float: left;
+}
+
+section {
+	margin-top: 170px;
+}
+
+#mainBox {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+#mainBox {
+	height: 1300px;
+}
+
+#topBox {
+	padding-top: 50px;
+}
+
+#newMusic {
+	width: 550px;
+}
+
+#albums {
+	width: auto;
+	height: auto;
+	margin: 20px auto;
+	padding-left: 5px;
+}
+
+#albums>div {
+	width: 180px;
+	height: 180px;
+	margin: 5px 5px;
+	border-width: 1px;
+	border-style: solid;
+	background-color: white;
+	float: left;
+}
+
+#onlyMyChart {
+	width: 490px;
+	height: 425px;
+	margin-left: -35px;
+}
+
+#curChart {
+	margin-top: 50px;
+	width: 1000px;
+	height: 620px;
+	border: none;
+}
+
+#curChart div {
+	border: none;
+}
+
+#events {
+	margin-top: 50px;
+	width: 390px;
+	height: 620px;
+	margin-left: 6px;
+}
+
+.rankAl {
+	margin-top: 1px;
+	margin-left: 40px;
+	height: 46px;
+	width: 46px;
+	float: left;
+}
+
+.rankAl img {
+	height: 46px;
+	width: 46px;
+	object-fit: contain;
+}
+
+th p {
+	margin-top: 12px;
+}
+
+.rankmName {
+	margin-left: 30px;
+	float: left;
+}
+
+.rankmName a, .aName a {
+	text-decoration: none;
+	color: black;
+}
+
+#charts>table>tbody>tr:nth-child(1)>th:nth-child(1)>p {
+	font-size: 19px;
+	color: #b99400;
+}
+
+#charts>table>tbody>tr:nth-child(2)>th:nth-child(1)>p {
+	font-size: 18px;
+	color: #745c00;
+}
+
+#charts>table>tbody>tr:nth-child(3)>th:nth-child(1)>p {
+	font-size: 17px;
+	color: #352a00;
+}
+
+th {
+	height: 50px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	font-weight: lighter;
+	border-bottom: 2px solid whitesmoke;
+}
+
+th:nth-of-type(1) {
+	width: 45px;
+	float: left;
+}
+
+th:nth-of-type(2) {
+	width: 40px;
+	float: left;
+}
+
+th:nth-of-type(3) {
+	width: 560px;
+	float: left;
+}
+
+th:nth-of-type(4) {
+	width: 233px;
+	float: left;
+}
+
+th:nth-of-type(5) {
+	width: 50px;
+	margin-right: 2px;
+	float: left;
+}
+
+th:nth-of-type(6){
+	width: 50px;
+	margin-right: 2px;
+	float: left;
+}
+
+#onlyMyChart {
+	border: none;
+}
+
+#albums>div {
+	position: relative;
+}
+
+#albums>div {
+	border: 1px rgba(128, 128, 128, 0.212);
+}
+
+#albums img {
+	width: 180px;
+	height: 180px;
+	z-index: 5;
+	object-fit: contain;
+}
+
+.album-name {
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	width: 180px;
+	height: 180px;
+	background-color: rgba(0, 0, 0, 0.253);
+	z-index: 6;
+}
+
+.album-name p, .album-name a {
+	padding-top: 80px;
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+#newMusic {
+	border: none;
+}
+
+#newMusic>p {
+	color: gray;
+	font-size: large;
+	padding-top: 10px;
+	margin-left: 35px;
+	font-weight: bold;
+}
+
+.ranked {
+	font-weight: bold;
+}
+
+.rankup {
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.download {
+	margin-top: 12px;
+	height: 25px;
+	width: 25px;
+}
+
+.chartmini {
+	font-size: small;
+	color: rgb(138, 138, 138);
+}
+
+.chartbold {
+	font-weight: bolder;
+	color: whitesmoke
+}
+
+#selStroke {
+	border: none;
+}
+
+#chartDate {
+	margin-left: 20px;
+}
+
+#alDate {
+	float: right;
+	margin-right: 70px;
+}
+
+#chartCount {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#alCount {
+	float: right;
+	margin-right: 70px;
+	margin-top: 15px;
+}
+
+#mName {
+	font-size: 15px;
+	margin-top: 50px;
+	margin-left: 15px;
+	color: whitesmoke;
+}
+
+#aName {
+	color: rgb(170, 170, 170);
+	font-size: 20px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 20px;
+}
+
+.slideshow {
+	width: 390px;
+	height: 620px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	z-index: 1;
+}
+
+.slide.active {
+	opacity: 1;
+}
+
+#events>div {
+	position: relative;
+}
+
+.slidedark {
+	position: absolute;
+	top: 460px;
+	left: 0;
+	width: 390px;
+	height: 160px;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.849);
+}
+
+.slidetext {
+	position: absolute;
+	font-size: larger;
+	color: rgb(255, 255, 255);
+	top: 20px;
+	left: 20px;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.playlist-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.playlist-popup h3 {
+  text-align: center;
+}
+
+.playlist-list {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-list li {
+  margin-bottom: 10px;
+}
+
+.close-button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

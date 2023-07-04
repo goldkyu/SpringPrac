@@ -1,0 +1,694 @@
+/*상단배너박스*/
+#image_banner {
+	width: 100%;
+	height: 900px;
+	margin: auto;
+	margin-top: 120px;
+	background-color: transparent;
+	position: relative;
+}
+
+#ylocation {
+	width: 120%;
+	height: 600px;
+	background-color: #FACF1E;
+	position: absolute;
+	margin-top: -20px;
+}
+
+/*...*/
+section {
+	margin-top: -130px;
+}
+
+#mainBox {
+	width: 1400px;
+	height: 2100px;
+	margin: 0px auto;
+	background-color: transparent;
+}
+
+/*탭 이동 부분*/
+.textbox {
+	width: 1400px;
+	height: 60px;
+	padding: 30px 0;
+	text-align: center;
+	font-size: 45px;
+}
+
+#category li {
+	display: inline;
+	list-style: non;
+	float: left;
+	border: 2px solid;
+}
+
+#music {
+	/*    background-color: greenyellow;*/
+	width: 350px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 168px;
+}
+
+#ticket {
+	/*  background-color: greenyellow;*/
+	width: 350px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	border-left: none;
+	/*    margin-left: 30px;*/
+}
+
+#shopping {
+	/*   background-color: greenyellow;*/
+	width: 350px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	border-left: none;
+	/*    margin-left: 30px;*/
+}
+
+#box1 {
+	width: 1401px;
+	height: 480px;
+}
+
+#img {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+}
+
+#box1 li {
+	width: 700px;
+	display: inline;
+	list-style: non;
+}
+
+#box2 {
+	float: left;
+	width: 570px;
+	height: 600px;
+	border: 2px solid;
+	margin-left: 135px;
+}
+
+#box2_1 ul {
+	margin: 0px;
+	margin-top: 20px;
+	padding: 0px;
+	width: 600px;
+}
+
+#box2_1 ul li {
+	display: inline;
+	list-style: non;
+	margin: 15px;
+}
+
+#box2-2 {
+	width: 900px;
+}
+
+#albums {
+	width: 570px;
+	height: 300px;
+	margin: 5px;
+	padding-left: 10px;
+}
+
+#box2-2 div:nth-of-type(1) div {
+	width: 165px;
+	height: 165px;
+	margin: 5px 5px;
+	border-width: 1px;
+	border-style: solid;
+	background-color: white;
+	float: left;
+}
+
+#box2-2 div:nth-of-type(1) div img {
+	width: 165px;
+	height: 165px;
+	object-fit: contain;
+}
+
+#curChart {
+	margin-top: 20px;
+	width: 455px;
+	height: 470px;
+}
+
+#realtime {
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: -10px;
+}
+
+#charts div {
+	margin-bottom: 4px;
+	margin-left: 4px;
+}
+
+#charts div div {
+	border-width: 1px;
+	height: 45px;
+	border-style: solid;
+	background-color: white;
+}
+/* 랭킹*/
+.rankAl {
+	margin-top: 1px;
+	margin-left: 40px;
+	height: 46px;
+	width: 46px;
+	float: left;
+}
+
+.rankAl img {
+	height: 46px;
+	width: 46px;
+	object-fit: contain;
+}
+
+th {
+	height: 50px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	border-bottom: 1px solid whitesmoke !important;
+	font-size: small;
+}
+
+th p {
+	margin-top: 15px;
+	font-family: 'Poppins', sans-serif !important;
+}
+
+th:nth-of-type(1) {
+	width: 20px;
+	float: left;
+	font-weight: bold;
+}
+
+th:nth-of-type(1) p {
+	margin-top: 10px;
+}
+
+table tr:nth-of-type(n+4):nth-of-type(-n+10) th:nth-of-type(1) p {
+	margin-top: 15px;
+}
+
+th:nth-of-type(2) {
+	width: 30px;
+	float: left;
+}
+
+th:nth-of-type(3) {
+	width: 290px;
+	float: left;
+}
+
+th:nth-of-type(4) {
+	width: 100px;
+	float: left;
+}
+
+th:nth-of-type(5) {
+	width: 50px;
+	margin-right: 2px;
+	float: left;
+}
+
+.btn {
+	width: 400px;
+	height: 50px;
+	font-size: 15px;
+	background: #fbfbfb;
+    border-color : #f3f3f3;
+    color: #373737;
+  	margin-left: 500px;
+	margin-top: 40px;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*옥션css*/
+#auction_box {
+	width: 1060px;
+	height: 550px;
+	margin: 30px auto;
+	border: 1px solid #bcbcbc;
+}
+
+/*첫번째박스*/
+#division_1 {
+	width: 250px;
+	height: 550px;
+	float: left;
+	border: 1px solid #bcbcbc;
+}
+
+.auction_image {
+	width: 240px;
+	height: 240px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border: 1px solid #bcbcbc;
+	background-color: transparent;
+}
+
+.auction_state {
+	width: 480px;
+	height: 420px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border: 1px solid #bcbcbc;
+	background-color: transparent;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+/*두번번째박스*/
+#division_2 {
+	width: 490px;
+	height: 550px;
+	margin: 0 2px;
+	float: left;
+	border: 1px solid #bcbcbc;
+}
+
+.auction_title {
+	line-height: 50px;
+	padding: 0 10px;
+	display: inline;
+}
+
+.textspans--BOLD {
+	font-weight: 700;
+}
+
+.borderline {
+	border-top: 1px solid grey;
+	margin: 10px;
+}
+
+/*공통 구분라인*/
+.item_condition {
+	display: flex;
+	/*  align-items: center;*/
+	gap: 20px;
+}
+
+/*<!-- 구분1 -->*/
+.condition_state01 {
+	width: 18%;
+	text-align: right;
+	margin: 5px;
+}
+
+.condition_state02 {
+	width: 0%;
+	text-align: left;
+	margin: 5px;
+}
+
+/*<!-- 구분2 -->*/
+.condition_time {
+	width: 18%;
+	text-align: right;
+	margin: 5px;
+}
+
+.condition_countdown {
+	color: red;
+	margin: 5px;
+}
+
+/*<!-- 구분3 -->*/
+.bid_state {
+	width: 19%;
+	text-align: right;
+}
+
+.bid_price {
+	width: 40%;
+}
+
+.bid_quantity {
+	width: 26%;
+	text-align: right;
+}
+
+/*<!-- 구분4 -->*/
+.bid_state01 {
+	width: 38%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.bid_button {
+	width: 55%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.bid_btn {
+	width: 140px;
+	height: 30px;
+	background-color: transparent;
+	color: black;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 30px;
+	margin-top: 5px;
+}
+
+/*<!-- 구분5 -->*/
+.bid_priceebox {
+	width: 55%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.bid_pbox {
+	width: 130px;
+	height: 30px;
+	border: 1px solid #666;
+	padding: 10px;
+}
+
+/*<!-- 구분6 -->*/
+.bid_text {
+	width: 60%;
+	text-align: right;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+/*<!-- 구분7 -->*/
+.buy_state {
+	width: 20%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.buy_total {
+	width: 40%;
+	margin-top: 5px;
+}
+
+.buy_button {
+	width: 29%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.buy_btn {
+	width: 140px;
+	height: 30px;
+	background-color: transparent;
+	color: black;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+/*<!-- 구분8 -->*/
+.interest_button {
+	width: 98%;
+	text-align: right;
+	margin-top: 12px;
+}
+
+.interest_btn {
+	width: 140px;
+	height: 30px;
+	background-color: transparent;
+	color: black;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+/*새로고침버튼*/
+.new_button {
+	width: 98%;
+	text-align: right;
+	margin-top: 30px;
+}
+
+.new_btn {
+	width: 100px;
+	height: 30px;
+	background-color: transparent;
+	color: black;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+/*세번번째박스*/
+#division_3 {
+	width: 310px;
+	height: 550px;
+	float: right;
+	border: 1px solid #bcbcbc;
+}
+
+.auction_data_border {
+	width: 300px;
+	height: 420px;
+	margin-top: 8px;
+	margin-left: 5px;
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+.auction_text {
+	border: 1px;
+	width: 290px;
+	height: 410px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+}
+
+/*경매탭 이동 버튼*/
+.tab_condition {
+	display: flex;
+}
+
+.tab_button {
+	width: 98%;
+	text-align: right;
+	margin-top: 25px;
+}
+
+.tab_btn {
+	width: 100px;
+	height: 30px;
+	background-color: transparent;
+	color: black;
+	border: 1px solid;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+/*여기까지 옥션..*/
+.img {
+	width: 150px;
+	height: 135px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border-style: solid;
+}
+
+#firstDiv {
+	clear: both;
+}
+
+.text {
+	width: 150px;
+	height: 35px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border-style: solid;
+}
+
+#box3 {
+	width: 486px;
+	height: 600px;
+	border: 2px solid;
+	border-left: none;
+	float: left;
+	margin-right: 165px;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+#box3_1 {
+	width: 455px;
+	height: 300px;
+	float: left;
+	border: 2px solid;
+	margin-top: 20px;
+	margin-left: 10px
+}
+
+#box2 {
+	float: left;
+	width: 565px;
+	height: 600px;
+	border: 2px solid;
+	margin-left: 168px;
+	padding-top: 20px;
+}
+
+#box1 li {
+	width: 700px;
+	display: inline;
+	list-style: non;
+}
+
+/* 정렬 */
+.click-div {
+	position: absolute;
+	width: 100px;
+	height: 700px;
+	text-align: center;
+	z-index: 2;
+}
+
+.click-div img {
+	width: 30px;
+	height: 30px;
+	padding-top: 335px;
+}
+
+#left-div {
+	top: 50px;
+	left: 16%;
+}
+
+#right-div {
+	top: 50px;
+	left: 77.5%;
+}
+
+/* animation */
+#visual.on1 {
+	
+}
+
+#visual.on2 {
+	left: -68.5%;
+}
+
+#visual.on3 {
+	left: -137.5%;
+}
+
+#visual.on4 {
+	left: -206.5%;
+}
+
+/* 추가 */
+.tkrank {
+	width: 450px;
+	height: 32px;
+	text-align: center;
+	font-size: 30px;
+	/*  background-color : lightgrey; */
+	margin-left: 15px;
+}
+
+.tkrank01 {
+	width: 450px;
+	height: 530px;
+	/*    background-color : lightgrey; */
+	margin-top: 7px;
+	margin-left: 15px;
+}
+
+/* 탭버튼 */
+#rank {
+	float: right;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	outline: none;
+	background-color: #ffffff;
+	cursor: pointer;
+	border-radius: 0px 5px 5px 0px;
+}
+
+#rank01 {
+	float: right;
+	margin-bottom: 5px;
+	margin-right: 3px;
+	outline: none;
+	background-color: #ffffff;
+	cursor: pointer;
+	border-radius: 5px 0px 0px 5px;
+}
+
+/* 중간배너 */
+#midbanner {
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	min-width: 1300px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	/*     overflow: hidden; */
+}
+
+#eventbanner {
+	width: 1100px;
+	height: 505px;
+	margin: 30px auto;
+	/* background-color: transparent; */
+}
+
+.textbox01 {
+	width: 100%;
+	height: 60px;
+	padding: 30px 0;
+	text-align: center;
+	font-size: 45px;
+	margin-top: 20px;
+	/* 	background-color: grey; */
+}
+
+.eventbox {
+	width: 360px;
+	height: 504px;
+	float: left;
+}
+
+.eventbox01 {
+	width: 360px;
+	height: 504px;
+	float: left;
+	margin: 0px 10px auto;
+}
+
+.eventbox02 {
+	width: 360px;
+	height: 504px;
+	float: right;
+}

@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+text, p, a, li, h, b, input, input::placeholder, .infos, th {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+#mainHeader {
+	height: 100px;
+	background-color: #FACF1E;
+}
+
+#search {
+	border: 3px solid;
+	height: 28px;
+	width: 250px;
+	padding-right: 50px !important;
+	border-radius: 50px;
+	padding: 1px 8px;
+	margin-bottom: 28px;
+	font-size: 14px;
+	background-color: #FACF1E;
+	outline: none;
+}
+
+.search-bar {
+	position: absolute;
+	top: 63px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#find-btn {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 13px;
+	top: 7px;
+}
+
+#mainHeader a {
+	text-decoration: none;
+	font-size: medium;
+	color: #333333;
+}
+
+#leftNav ul li {
+	display: inline;
+	list-style: none;
+	margin-top: 15px;
+	margin-left: 20px;
+	float: left;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+#rightNav ul li {
+	display: inline;
+	list-style: none;
+	margin-top: 15px;
+	margin-right: 20px;
+	float: right;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+li a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+#logo {
+	font-size: 40px;
+	position: absolute;
+	top: 50px;
+	left: 35%;
+	transform: translate(-50%, -50%);
+}
+
+#logo a {
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+#slide-con{
+	position: absolute;
+	top: 10px;
+	right: 25%;
+}
+
+#slideshow {
+	position: relative;
+	width: 250px;
+	height: 90px;
+}
+
+#slideshow>div {
+	position: absolute;
+}

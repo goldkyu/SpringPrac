@@ -1,0 +1,97 @@
+#mainBox {
+    height: 1600px;
+}
+
+#topBox {
+    height: 600px;
+    padding-top: 50px;
+}
+
+#bigAd div {
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+#hotBid div {
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+#bigAd div:nth-of-type(2) {
+    width: 1100px;
+    height: 550px;
+    margin: 0 15px;
+    float: left;
+
+}
+
+#bigAd div:nth-of-type(1) {
+    width: 130px;
+    height: 550px;
+    float: left;
+}
+
+#bigAd div:nth-of-type(3) {
+    width: 130px;
+    height: 550px;
+    float: right;
+}
+
+#bottomBox {
+    margin-top: 50px;
+}
+
+#hotBid {
+    width: 1000px;
+}
+
+#hotBid>div {
+    width: 200px;
+    height: 360px;
+    float: left;
+    margin: 2px 2px;
+}
+
+#hotBid div div:nth-of-type(1) {
+    width: 190px;
+    height: 190px;
+    margin: 5px auto;
+}
+
+#hotBid div div:nth-of-type(2) {
+    width: 190px;
+    height: 150px;
+    margin: 5px auto;
+}
+
+#nowBid {
+    width: 573px;
+    height: 725px;
+    float: right;
+    margin-top: -363px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+#nowBid div{
+    border-width: 1px;
+    border-style: solid;
+    margin: 5px 40px;
+}
+
+#nowBid div:nth-of-type(1){
+    width: 490px;
+    height: 490px;
+}
+
+#nowBid div:nth-of-type(2){
+    width: 490px;
+    height: 85px;
+}
+#nowBid div:nth-of-type(3){
+    width: 490px;
+    height: 125px;
+}

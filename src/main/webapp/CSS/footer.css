@@ -1,0 +1,40 @@
+footer {
+    width: 100%;
+    border: 1px solid #bcbcbc;
+    background-color: #334877;
+    clear: both;
+    height: 120px;
+    position: relative;
+    
+}
+
+#mainFooter {
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.footerInner {
+    width: 1400px;
+    margin: 30px auto;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 12x;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footerInner p.address {
+    margin-top: 0;
+    margin: 10px auto;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.footerInner .inner_images {
+    margin-top: 1%;
+    margin-left: 88%;
+    cursor: pointer;
+}

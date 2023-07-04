@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#mainHeader {
+    height: 120px;
+    background-color: #FACF1E;
+}
+
+header input {
+    border: 3px solid;
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0 10px;
+    font-size: 14px;
+    background-color: #FACF1E;
+    outline: none;
+}
+
+#mainHeader a {
+    text-decoration: none;
+    font-size: medium;
+    color: #333333;
+}
+
+
+header li {
+    display: inline;
+    list-style: none;
+    margin: 30px;
+    float: left;
+}
+
+#logo {
+    font-size: 40px;
+    position: absolute;
+    top: 63px;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar {
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*section css*/
+section{ 
+    margin-top: 120px;
+}
+
+#mainBox {
+    width: 1400px;
+    height: 1800px;
+    margin: 0 auto;
+/*   background-color: gray;*/
+}
+
+#category{
+   width: 1400px;
+   height: 50px;
+/*   background-color: yellow;*/
+   margin-bottom: 70px;
+}
+#category li {
+    display: inline;
+    list-style: non;
+    margin: 0px 90px;
+}
+
+.a{
+    line-height: 100px;
+    text-align: center;
+    margin: 0px 600px;
+    font-size: 22PX;
+}
+
+.img2-1{
+    width: 400px;
+
+    height: 300px;
+/*    background-color: yellow;*/
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    border-style: solid;
+
+}
+.img2-2{
+
+    width: 400px;
+    height: 300px;
+/*    background-color: yellowgreen;*/
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-style: solid;
+
+}
+.img2-3{
+
+    width: 400px;
+    height: 300px;
+/*    background-color: yellow;*/
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border-style: solid;
+}
+.text1{
+
+    width: 400px;
+    height: 100px;
+/*    background-color: white;*/
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    border-style: solid;
+}
+.text2{
+
+    width: 400px;
+    height: 100px;
+/*    background-color: white;*/
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border-style: solid;
+
+}
+.text3{
+
+    width: 400px;
+    height: 100px;
+/*    background-color: white;*/
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border-style: solid;
+}
+
+
+footer{
+    width: 100%;
+    background-color: whitesmoke;
+    clear: both;
+}
+#mainFooter{
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+}

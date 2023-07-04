@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.logo.mybatis.mapper">
+	<select id="selectNewAlbums" resultType="Map">
+		SELECT ai.*, a_information.a_name FROM album_information ai INNER JOIN
+		a_information ON ai.a_id = a_information.a_id ORDER BY ai.album_date
+		DESC;
+	</select>
+
+	<select id="selectTopChart" resultType="Map">
+		SELECT
+		rt.album_prof_photo,
+		rt.m_name,
+		rt.a_name,
+		rt.album_id,
+		rt.a_id,
+		rt.playcount,
+		@rank:=@rank + 1 AS `rank`,
+		COALESCE(ry.old_rank - @rank, 0) AS old_rank,
+		rt.m_id
+		FROM
+		(SELECT
+		album_information.album_prof_photo,
+		m_information.m_id,
+		m_information.m_name,
+		a_information.a_name,
+		m_information.album_id,
+		a_information.a_id,
+		SUM(CASE
+		WHEN u_listen.m_playdate BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 10
+		DAY) AND CURRENT_DATE() THEN u_listen.m_playcount
+		ELSE 0
+		END) AS playcount
+		FROM
+		u_listen
+		INNER JOIN m_information ON u_listen.m_id = m_information.m_id
+		INNER JOIN a_information ON m_information.a_id = a_information.a_id
+		INNER JOIN album_information ON m_information.album_id =
+		album_information.album_id
+		GROUP BY album_information.album_prof_photo , m_information.m_id ,
+		m_information.m_name , a_information.a_name , m_information.album_id ,
+		a_information.a_id
+		ORDER BY playcount DESC) rt
+		LEFT JOIN
+		(SELECT
+		m_information.album_id,
+		a_information.a_id,
+		SUM(CASE
+		WHEN u_listen.m_playdate BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 1
+		DAY) AND DATE_SUB(CURRENT_DATE(), INTERVAL 11 DAY) THEN
+		u_listen.m_playcount
+		ELSE 0
+		END) AS old_playcount,
+		@old_rank:=@old_rank + 1 AS old_rank
+		FROM
+		u_listen
+		INNER JOIN m_information ON u_listen.m_id = m_information.m_id
+		INNER JOIN a_information ON m_information.a_id = a_information.a_id
+		INNER JOIN album_information ON m_information.album_id =
+		album_information.album_id
+		CROSS JOIN (SELECT @old_rank:=0) AS ry
+		WHERE
+		u_listen.m_playdate BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 11 DAY)
+		AND DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY)
+		GROUP BY m_information.album_id , a_information.a_id
+		ORDER BY old_playcount DESC) ry ON rt.album_id = ry.album_id
+		AND rt.a_id = ry.a_id
+		CROSS JOIN
+		(SELECT @rank:=0) AS `rank`
+		ORDER BY playcount DESC limit 10;
+		
+	</select>
+
+	<select id="selectUserListen" resultType="com.logo.model.UserListen" parameterType="com.logo.model.User">
+		SELECT
+		u_id,
+		m_id,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 0 DAY) THEN
+		m_playcount ELSE 0 END) AS day1,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 1 DAY) THEN
+		m_playcount ELSE 0 END) AS day2,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 2 DAY) THEN
+		m_playcount ELSE 0 END) AS day3,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 3 DAY) THEN
+		m_playcount ELSE 0 END) AS day4,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 4 DAY) THEN
+		m_playcount ELSE 0 END) AS day5,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 5 DAY) THEN
+		m_playcount ELSE 0 END) AS day6,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 6 DAY) THEN
+		m_playcount ELSE 0 END) AS day7,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY) THEN
+		m_playcount ELSE 0 END) AS day8,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 8 DAY) THEN
+		m_playcount ELSE 0 END) AS day9,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 9 DAY) THEN
+		m_playcount ELSE 0 END) AS day10,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 10 DAY)
+		THEN m_playcount ELSE 0 END) AS day11,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 11 DAY)
+		THEN m_playcount ELSE 0 END) AS day12,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 12 DAY)
+		THEN m_playcount ELSE 0 END) AS day13,
+		SUM(CASE WHEN m_playdate = DATE_SUB(CURRENT_DATE(), INTERVAL 13 DAY)
+		THEN m_playcount ELSE 0 END) AS day14
+
+		FROM
+		u_listen
+		WHERE
+		u_id = #{u_id} AND m_id IN (
+		SELECT * FROM (
+		SELECT m_id
+		FROM u_listen
+		WHERE u_id = #{u_id}
+		GROUP BY m_id
+		ORDER BY SUM(m_playcount) DESC
+		LIMIT 5
+		) as li
+		) AND m_playdate BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 13 DAY) AND
+		CURRENT_DATE()
+		GROUP BY
+		m_id
+		ORDER BY
+		m_id;
+	</select>
+	<select id="selectUserMusic" resultType="com.logo.model.Music" parameterType="com.logo.model.User">
+
+		SELECT DISTINCT
+		album_information.album_prof_photo,
+		m_information.m_name,
+		a_information.a_name,
+		m_information.album_id,
+		m_information.a_id
+		FROM
+		m_information
+		INNER JOIN a_information ON m_information.a_id = a_information.a_id
+		INNER JOIN album_information ON m_information.album_id =
+		album_information.album_id
+		WHERE
+		m_information.m_id IN (
+		SELECT *
+		FROM (
+		SELECT m_id
+		FROM u_listen
+		WHERE u_id = #{u_id}
+		GROUP BY m_id
+		ORDER BY SUM(m_playcount) DESC
+		LIMIT 5
+		) as li
+		)
+	</select>
+
+</mapper>

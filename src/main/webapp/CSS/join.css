@@ -1,0 +1,142 @@
+/* body */
+
+section {
+    height: fit-content;
+}
+input{
+    outline: none;
+}
+
+#mainBox {
+    height: 1200px;
+}
+
+.birth {
+    margin-left: -48px;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.birthNext {
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.birthSel {
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+#regiForm {
+    height: max-content;
+    padding-top: 20px;
+    margin-left: -245px;
+    margin-top: -300px;
+    width: 490px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.wrong {
+    color: red;
+}
+
+.fonts {
+    color: black;
+    font-size: large;
+}
+
+.infos {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+input::placeholder {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.smallfonts {
+    margin-left: -25px;
+    color: rgb(204, 204, 204);
+    font-size: small;
+}
+
+
+
+.button {
+    margin: 1cm;
+    margin-left: 200px;
+}
+
+#regiForm li {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.inWithBtn {
+    margin-left: -48px;
+    width: 310px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+
+}
+
+.inWithNon {
+    margin-left: -48px;
+    width: 420px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.inEmail {
+    margin-left: -48px;
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.bottomBtn {
+    border: none;
+}
+
+.formButton {
+    margin-left: 20px;
+    width: 80px;
+    height: 30px;
+}
+
+.btn {
+    border-style: none;
+}
+
+
+
+.sel {
+    width: 183px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.divair {
+    padding-top: 20px;
+}
+
+/* footer */

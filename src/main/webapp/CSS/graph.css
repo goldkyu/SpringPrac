@@ -1,0 +1,54 @@
+
+
+path{
+  stroke-width: 1.5px;
+}
+
+#newMusic{
+  z-index: 20;
+}
+
+#curve_chart {
+  margin-top: -40px;
+  margin-left: -200px;
+}
+
+#curve_chart > div > div:nth-child(1) > div > svg > rect{
+  fill: none;
+}
+
+#selStroke {
+  position: relative;
+  margin-top: -440px;
+  margin-left: 675px;
+  width: 200px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.801);
+  border: 1px solid white;
+  border-radius: 2%;
+}
+
+.selAlbum{
+  position: absolute;
+  top: 2%;
+  left: 4.5%;
+  width: 180px;
+  height: 180px;
+  
+}
+
+.selAlbum > img{
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.selRank{
+  position: absolute;
+  top: 50%;
+  left: 4.5%;
+  width: 180px;
+  height: 190px;
+  
+}
+
